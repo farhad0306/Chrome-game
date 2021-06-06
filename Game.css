@@ -1,13 +1,17 @@
+
+/* Alligns the Score to the middle*/
 #score {
    text-align: center; 
 }
-
+/* Body css and sets the "Bgcolor" animation in a 20s infinite loop. */
 body {
  margin: 0;
  padding: 0;
  animation: bgcolor infinite 20s; 
 }
 
+
+/* Specificates the bgcolor animation. */
 @keyframes bgcolor {
     0%
     {
@@ -36,9 +40,9 @@ body {
 }
 
 #game {
-    width: 600px;
-    height: 300px;
-    border: 2px solid black;
+    width: 600px; /* Width of the game window */
+    height: 300px; /* Height of the game window*/
+    border: 2px solid black; /* Sets a 2px solid black border around the game */
     margin: auto;
     background-image: url(https://thumbs.dreamstime.com/b/landscape-game-background-game-black-white-background-seamless-cartoon-landscape-89891527.jpg);
     background-size: cover;
@@ -49,10 +53,10 @@ body {
 }
 
 #snus {
-    height: 75px;
-    width: 75px;
+    height: 75px; /* Height of the character */
+    width: 75px; /* Width of the character */
     position: relative;
-    top: 175px;
+    top: 175px; /* Top of the character */
     background-image: url(https://swedishmatch.cdn.storm.io/2e057882-58cd-4299-a0c6-08105a5f30c3.jpg?format=png&maxheight=480);
     background-size: cover;
 }
@@ -65,28 +69,28 @@ body {
     left:550px;
     background-image: url(https://opengameart.org/sites/default/files/Rock%20Pile.png);
     background-size: cover;
-    animation: rock 1.50s infinite;
+    animation: rock 1.50s infinite; /* sets the animation in the rock  */
 }
 
 
 .rock-animation {
-    animation: rock 1.50s infinite;
+    animation: rock 1.50s infinite; /* Sets the rock animation to a 1.50 second infinite loop.*/
 }
 
-@keyframes rock {
-    0%{left: 550px;}
-    100%{left: -50px;}
+@keyframes rock { /* specification of the rock animation'. */
+    0%{left: 550px;} /* Starts at 550px */
+    100%{left: -50px;} /* Ends animation at -50px */ 
 
 }
 
 .jump-animation{
-    animation: jump 0.5s;
+    animation: jump 0.5s; /* sets the duration of the animation */
 }
 
-@keyframes jump {
-    0%{top: 175px;}
+@keyframes jump { /* Specificates the jump animation.*/
+    0%{top: 175px;} /* the beginning of the jump animation starts at 175px (top of the character)*/
     50%{top: 50px;}
     65%{top: 50px;}
-    100%{top: 170px;}
+    100%{top: 170px;} /* The end of the animation which indicates that it will elevate and come back to its original position. */
 }
 
